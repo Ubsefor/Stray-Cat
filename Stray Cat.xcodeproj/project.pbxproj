@@ -12,10 +12,8 @@
 		4714C4EB25DE8C3C007108C0 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 4714C4E525DE8C3C007108C0 /* glad.c */; };
 		4714C4EC25DE8C3C007108C0 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4714C4E825DE8C3C007108C0 /* Player.cpp */; };
 		4714C50325DE8E18007108C0 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */; };
-		4714C50425DE8E18007108C0 /* libglut.3.11.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50125DE8E18007108C0 /* libglut.3.11.0.dylib */; };
 		4714C51E25DE93D4007108C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C4FC25DE8DBF007108C0 /* OpenGL.framework */; };
 		4714C51F25DE93D4007108C0 /* OpenGL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C4FC25DE8DBF007108C0 /* OpenGL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4714C52125DE93D5007108C0 /* libglut.3.11.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50125DE8E18007108C0 /* libglut.3.11.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4714C52225DE93D6007108C0 /* libglfw.3.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,7 +34,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4714C52225DE93D6007108C0 /* libglfw.3.3.dylib in Embed Frameworks */,
-				4714C52125DE93D5007108C0 /* libglut.3.11.0.dylib in Embed Frameworks */,
 				4714C51F25DE93D4007108C0 /* OpenGL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -57,7 +54,6 @@
 		4714C4EA25DE8C3C007108C0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		4714C4FC25DE8DBF007108C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		4714C50125DE8E18007108C0 /* libglut.3.11.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.11.0.dylib; path = ../../../../../../usr/local/Cellar/freeglut/3.2.1_1/lib/libglut.3.11.0.dylib; sourceTree = "<group>"; };
 		4714C50C25DE9013007108C0 /* Stray Cat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stray Cat.entitlements"; sourceTree = "<group>"; };
 		4714C51C25DE93AC007108C0 /* glad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glad; sourceTree = "<group>"; };
 		4714C52325DE9566007108C0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -69,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4714C50325DE8E18007108C0 /* libglfw.3.3.dylib in Frameworks */,
-				4714C50425DE8E18007108C0 /* libglut.3.11.0.dylib in Frameworks */,
 				4714C51E25DE93D4007108C0 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */,
-				4714C50125DE8E18007108C0 /* libglut.3.11.0.dylib */,
 				4714C4FC25DE8DBF007108C0 /* OpenGL.framework */,
 			);
 			name = Frameworks;
@@ -314,7 +308,7 @@
 					"/usr/local/lib/**",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.straycat-cg.ogl";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.straycat-cg.ogl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -333,7 +327,7 @@
 					"/usr/local/lib/**",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.straycat-cg.ogl";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.straycat-cg.ogl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
