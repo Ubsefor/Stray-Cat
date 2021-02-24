@@ -14,7 +14,7 @@
 		4714C50325DE8E18007108C0 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */; };
 		4714C51E25DE93D4007108C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C4FC25DE8DBF007108C0 /* OpenGL.framework */; };
 		4714C51F25DE93D4007108C0 /* OpenGL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C4FC25DE8DBF007108C0 /* OpenGL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4714C52225DE93D6007108C0 /* libglfw.3.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4714C52225DE93D6007108C0 /* libglfw.3.3.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4714C50025DE8E18007108C0 /* libglfw.3.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +29,7 @@
 		};
 		4714C52025DE93D4007108C0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -37,7 +37,7 @@
 				4714C51F25DE93D4007108C0 /* OpenGL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -57,6 +57,7 @@
 		4714C50C25DE9013007108C0 /* Stray Cat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stray Cat.entitlements"; sourceTree = "<group>"; };
 		4714C51C25DE93AC007108C0 /* glad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glad; sourceTree = "<group>"; };
 		4714C52325DE9566007108C0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		47FC5E9A25E661C2005F29F7 /* tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tex.png; path = Textures/tex.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,15 +94,16 @@
 		4714C4D825DE8B9B007108C0 /* Stray Cat */ = {
 			isa = PBXGroup;
 			children = (
+				47FC5E9325E65FF2005F29F7 /* Assets */,
 				4714C51C25DE93AC007108C0 /* glad */,
 				4714C50C25DE9013007108C0 /* Stray Cat.entitlements */,
 				4714C4D925DE8B9B007108C0 /* main.cpp */,
 				4714C4E125DE8C18007108C0 /* common.h */,
 				4714C4E225DE8C2A007108C0 /* Image.cpp */,
-				4714C4E525DE8C3C007108C0 /* glad.c */,
 				4714C4E725DE8C3C007108C0 /* Image.h */,
 				4714C4E825DE8C3C007108C0 /* Player.cpp */,
 				4714C4EA25DE8C3C007108C0 /* Player.h */,
+				4714C4E525DE8C3C007108C0 /* glad.c */,
 				4714C4E925DE8C3C007108C0 /* stb_image_write.h */,
 				4714C4E625DE8C3C007108C0 /* stb_image.h */,
 			);
@@ -115,6 +117,46 @@
 				4714C4FC25DE8DBF007108C0 /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47FC5E9325E65FF2005F29F7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				47FC5E9625E6601A005F29F7 /* Entities */,
+				47FC5E9925E661AE005F29F7 /* Textures */,
+				47FC5E9525E6600C005F29F7 /* Map */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		47FC5E9425E66002005F29F7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		47FC5E9525E6600C005F29F7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		47FC5E9625E6601A005F29F7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				47FC5E9425E66002005F29F7 /* Player */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		47FC5E9925E661AE005F29F7 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				47FC5E9A25E661C2005F29F7 /* tex.png */,
+			);
+			name = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

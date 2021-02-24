@@ -17,6 +17,8 @@ enum class MovementDir
   RIGHT
 };
 
+//static Image player_image("../..Stray Cat/Assets/Entities/Player/Player.png");
+
 struct Player
 {
   explicit Player(Point pos = {.x = 10, .y = 10}) :

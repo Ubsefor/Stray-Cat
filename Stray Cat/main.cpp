@@ -157,8 +157,12 @@ int main(int argc, char** argv)
     Point starting_pos{.x = WINDOW_WIDTH / 2, .y = WINDOW_HEIGHT / 2};
     Player player{starting_pos};
     
-    Image img("../resources/tex.png");
+    Image img("../../Stray Cat/Assets/Textures/tex.png");
     Image screenBuffer(WINDOW_WIDTH, WINDOW_HEIGHT, 4);
+    
+    for (int i = 0; i < WINDOW_WIDTH; i++)
+        for (int j = 0; j < WINDOW_HEIGHT; j++)
+            screenBuffer.PutPixel(i, j, img.GetPixel(i, j));
     
     glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);  GL_CHECK_ERRORS;
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f); GL_CHECK_ERRORS;
